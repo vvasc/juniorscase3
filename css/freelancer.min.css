@@ -30,7 +30,7 @@ hr.star-light
 	}
 hr.star-light:after
 {
-	color:#fff;background-color:#18bc9c
+	color:#fff;background-color:#909090
 }
 hr.star-primary
 {
@@ -54,7 +54,7 @@ section h2
 		}
 section.success
 	{
-		color:#fff;background:#18bc9c
+		color:#fff;background:#909090
 	}
 @media (max-width:767px)
 {
@@ -148,7 +148,7 @@ section.success
 }
 header.masthead
 {
-	padding-top:100px;padding-bottom:50px;text-align:center;color:#fff;background:#18bc9c
+	padding-top:100px;padding-bottom:50px;text-align:center;color:#fff;background:#909090
 }
 header.masthead img
 {
