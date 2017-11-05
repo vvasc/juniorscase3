@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -49,17 +50,63 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <img class="img-fluid" src="img/conporfile.png" alt="">
-        <div class="intro-text">
-          <span class="name">Zeta Consultoria</span>
-          <hr class="star-light">
-          <span class="skills">Consultoria em computação e tecnologias</span>
-        </div>
+    <!-- Carousel -->
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/portfolio/img1.jpg" style="width:100%">
       </div>
-    </header>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/portfolio/img2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/portfolio/img3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/portfolio/img4.jpg" style="width:100%">
+      </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <!-- Carousel end -->
+
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
